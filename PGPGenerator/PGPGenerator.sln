@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGPGenerator", "PGPGenerator\PGPGenerator.csproj", "{DF0F90DF-2A36-43AE-9C19-369D387FB0EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelSMS", "..\..\..\12. SMS\Application-Dev\SMS\ModelSMS\ModelSMS.csproj", "{DF0270DC-174B-40D1-9523-7D9856970F50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF0F90DF-2A36-43AE-9C19-369D387FB0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0F90DF-2A36-43AE-9C19-369D387FB0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0F90DF-2A36-43AE-9C19-369D387FB0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0F90DF-2A36-43AE-9C19-369D387FB0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0270DC-174B-40D1-9523-7D9856970F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0270DC-174B-40D1-9523-7D9856970F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0270DC-174B-40D1-9523-7D9856970F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0270DC-174B-40D1-9523-7D9856970F50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDA45602-4750-4077-9976-276B86E0F536}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mitra10.visualstudio.com/
+		SccProjectUniqueName0 = ..\\..\\..\\12.\u0020SMS\\Application-Dev\\SMS\\ModelSMS\\ModelSMS.csproj
+		SccProjectName0 = $/Mitra10\u0020Store\u0020Management\u0020System/SMS/ModelSMS
+		SccAuxPath0 = https://mitra10.visualstudio.com
+		SccLocalPath0 = ..\\..\\..\\12.\u0020SMS\\Application-Dev\\SMS\\ModelSMS
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal
