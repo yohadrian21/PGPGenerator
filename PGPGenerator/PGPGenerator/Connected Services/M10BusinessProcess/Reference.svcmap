@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f4bbe20a-cb95-427c-8f65-f67acafdec35" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://proteus/wsframework/Mitra10BusinessProcess.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Mitra10BusinessProcess.xsd" MetadataType="Schema" ID="1521fb2b-b793-42d5-bef8-b62c8beed489" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd3" />
+    <MetadataFile FileName="Mitra10BusinessProcess.wsdl" MetadataType="Wsdl" ID="eecb0f95-5f2d-4aa6-a67d-3ad35497dc95" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Mitra10BusinessProcess1.xsd" MetadataType="Schema" ID="73516030-914f-479f-91d7-d861a3f4f513" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd4" />
+    <MetadataFile FileName="Mitra10BusinessProcess.disco" MetadataType="Disco" ID="fedcee6f-2087-42fa-acc0-0009d75ae2d8" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?disco" />
+    <MetadataFile FileName="Mitra10BusinessProcess2.xsd" MetadataType="Schema" ID="7eeb40be-0353-46aa-891e-1964e2464acb" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd1" />
+    <MetadataFile FileName="Mitra10BusinessProcess3.xsd" MetadataType="Schema" ID="86be4813-486b-417b-9d0e-fa4813be2066" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd0" />
+    <MetadataFile FileName="Mitra10BusinessProcess4.xsd" MetadataType="Schema" ID="3df6eb84-d36a-4e7b-a662-0bfb85e6a853" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd5" />
+    <MetadataFile FileName="Mitra10BusinessProcess5.xsd" MetadataType="Schema" ID="44d5bcd3-7872-405f-be17-30990141799c" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd2" />
+    <MetadataFile FileName="M10BusinessProcess.wsdl" MetadataType="Wsdl" ID="c619bdbf-75bc-4051-b177-8eddb7690139" SourceId="1" SourceUrl="http://proteus/wsframework/Mitra10BusinessProcess.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

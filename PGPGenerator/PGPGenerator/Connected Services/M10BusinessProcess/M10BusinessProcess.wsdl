@@ -1,0 +1,2090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://Mitra10.com/SoapHeaders" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="M10BusinessProcess" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://Mitra10.com/SoapHeaders" location="http://proteus/wsframework/Mitra10BusinessProcess.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://proteus/wsframework/Mitra10BusinessProcess.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRestService_CreateUserReprintLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserReprintLog" />
+  </wsdl:message>
+  <wsdl:message name="IRestService_CreateUserReprintLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserReprintLogResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRestService">
+    <wsdl:operation name="CreateUserReprintLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestService/CreateUserReprintLog" message="tns:IRestService_CreateUserReprintLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestService/CreateUserReprintLogResponse" message="tns:IRestService_CreateUserReprintLog_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBusinessProcess" type="i0:IBusinessProcess">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EditApplicationConfigurationValue1">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditApplicationConfigurationValue1" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditApplicationConfigurationValue1_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppl.ConfigByApp_ParameterId_App_Config_Key">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetAppl.ConfigByApp_ParameterId_App_Config_Key" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetAppl.ConfigByApp_ParameterId_App_Config_Key_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationConfigurationAll">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationConfigurationAll" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationConfigurationAll_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountApplicationServiceCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountApplicationServiceCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountApplicationServiceCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountApplicationConfiguration">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountApplicationConfiguration" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountApplicationConfiguration_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountServices">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountServices" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountServices_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationServiceCategoryById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationServiceCategoryById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationServiceCategoryById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationServiceCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationServiceCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationServiceCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteApplication">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteApplication" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteApplication_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceByApplicationIdName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetServiceByApplicationIdName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetServiceByApplicationIdName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetServiceById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetServiceById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplicationParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateApplicationParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateApplicationParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditApplicationParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditApplicationParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditApplicationParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteApplicationParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteApplicationParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteApplicationParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRoleType">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateRoleType" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateRoleType_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditRoleType">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditRoleType" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditRoleType_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoleType">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteRoleType" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteRoleType_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleTypeByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleTypeByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleTypeByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleTypeById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleTypeById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleTypeById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountRoleType">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountRoleType" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountRoleType_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isRoleTypeAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isRoleTypeAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isRoleTypeAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isDataValid">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isDataValid" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isDataValid_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationConfigurationUnionWithTempTable">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationConfigurationUnionWithTempTable" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationConfigurationUnionWithTempTable_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationServiceUnionWithTempTable">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationServiceUnionWithTempTable" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationServiceUnionWithTempTable_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryByCode">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCategoryByCode" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCategoryByCode_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByCode">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetLocationByCode" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetLocationByCode_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isRoleAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isRoleAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isRoleAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountRoleById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountRoleById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountRoleById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleMerchandiseStructureUnionAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleMerchandiseStructureUnionAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleMerchandiseStructureUnionAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleMerchandiseStructure">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleMerchandiseStructure" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleMerchandiseStructure_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountRoleMerchandiseStructure">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountRoleMerchandiseStructure" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountRoleMerchandiseStructure_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleMerchandiseStructureById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleMerchandiseStructureById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleMerchandiseStructureById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleCompanyUnionAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleCompanyUnionAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleCompanyUnionAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountRoleCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountRoleCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountRoleCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleCompanyById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleCompanyById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleCompanyById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleModulePrivilegeUnionTempAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleModulePrivilegeUnionTempAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleModulePrivilegeUnionTempAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleModulePrivilegeAll">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleModulePrivilegeAll" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleModulePrivilegeAll_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountRoleModulePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountRoleModulePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountRoleModulePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleModulePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleModulePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleModulePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountModulePrivilegeUnionWithTemp">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountModulePrivilegeUnionWithTemp" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountModulePrivilegeUnionWithTemp_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountRoleModuleUnionWithTemp">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountRoleModuleUnionWithTemp" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountRoleModuleUnionWithTemp_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleModuleUnionTempAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleModuleUnionTempAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleModuleUnionTempAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleModuleById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleModuleById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleModuleById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRoleModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRoleModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMarkModulePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetMarkModulePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetMarkModulePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModulePrivilegeUnionTempAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModulePrivilegeUnionTempAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModulePrivilegeUnionTempAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCompanyUnionTableAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCompanyUnionTableAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCompanyUnionTableAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyUnionTempAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyUnionTempAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyUnionTempAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountPrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountPrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountPrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreatePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreatePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditPrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditPrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditPrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteModuleCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteModuleCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteModuleCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivilegeById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrivilegeById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrivilegeById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isPrivilegeAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isPrivilegeAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isPrivilegeAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCategoryUnionWithTemp">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCategoryUnionWithTemp" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCategoryUnionWithTemp_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryUnionTableTemp">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCategoryUnionTableTemp" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCategoryUnionTableTemp_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleUnionTemp">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleUnionTemp" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleUnionTemp_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProcessLog">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateProcessLog" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateProcessLog_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProcessLogToEnd">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/UpdateProcessLogToEnd" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_UpdateProcessLogToEnd_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProcessLogToError">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/UpdateProcessLogToError" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_UpdateProcessLogToError_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleUnionTempByAppId">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleUnionTempByAppId" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleUnionTempByAppId_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyRoleNew">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyRoleNew" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyRoleNew_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrinterType">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrinterType" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrinterType_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrinterList">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrinterList" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrinterList_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserDefaultPrinter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateUserDefaultPrinter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateUserDefaultPrinter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDefaultPrinter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserDefaultPrinter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserDefaultPrinter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyConfigurationAll">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyConfigurationAll" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyConfigurationAll_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyParameterByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyParameterByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyParameterByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyParameterById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyParameterById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyParameterById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCompanyConfigurationParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCompanyConfigurationParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCompanyConfigurationParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isCompanyAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isCompanyAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isCompanyAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCompanyParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCompanyParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCompanyParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCompanyParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateCompanyParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateCompanyParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCompanyParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditCompanyParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditCompanyParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isCompanyParameterAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isCompanyParameterAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isCompanyParameterAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCompanyParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteCompanyParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteCompanyParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCompanyLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCompanyLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCompanyLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyLocationByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyLocationByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyLocationByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCompanyLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateCompanyLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateCompanyLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyLocationById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyLocationById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyLocationById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetLocationName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetLocationName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCompanyLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteCompanyLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteCompanyLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCompanyConfiguration">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCompanyConfiguration" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCompanyConfiguration_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyConfigurationByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyConfigurationByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyConfigurationByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCompanyConfiguration">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateCompanyConfiguration" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateCompanyConfiguration_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCompanyConfiguration">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditCompanyConfiguration" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditCompanyConfiguration_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCompanyConfiguration">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteCompanyConfiguration" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteCompanyConfiguration_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountCompanyCutOffData">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountCompanyCutOffData" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountCompanyCutOffData_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCompanyCutOffData">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateCompanyCutOffData" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateCompanyCutOffData_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyCutOffData">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyCutOffData" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyCutOffData_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCompanyCutOffData">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteCompanyCutOffData" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteCompanyCutOffData_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountServiceCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountServiceCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountServiceCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCategoryByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetServiceCategoryByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetServiceCategoryByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCategoryById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetServiceCategoryById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetServiceCategoryById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateServiceCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateServiceCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateServiceCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditServiceCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditServiceCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditServiceCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isServiceCategoryAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isServiceCategoryAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isServiceCategoryAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteServiceCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteServiceCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteServiceCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountUserRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountUserRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountUserRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleByUserName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserRoleByUserName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserRoleByUserName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateUserRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateUserRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserRoleLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserRoleLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRoleLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteUserRoleLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteUserRoleLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleLocationUnionWithTempTable">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserRoleLocationUnionWithTempTable" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserRoleLocationUnionWithTempTable_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditUserRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditUserRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyLocationUnionWithTemp">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCompanyLocationUnionWithTemp" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCompanyLocationUnionWithTemp_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserRoleLocationAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isUserRoleLocationAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isUserRoleLocationAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserRole">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteUserRole" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteUserRole_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserRoleExists">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isUserRoleExists" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isUserRoleExists_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserModuleExists">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isUserModuleExists" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isUserModuleExists_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserModuleByUserName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserModuleByUserName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserModuleByUserName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountUserModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountUserModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountUserModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountUserCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountUserCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountUserCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserCompanyExists">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isUserCompanyExists" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isUserCompanyExists_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserLocationExists">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isUserLocationExists" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isUserLocationExists_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateUserCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateUserCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteUserCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteUserCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountUserModule2">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountUserModule2" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountUserModule2_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserModuleByUserName2">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserModuleByUserName2" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserModuleByUserName2_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserModulePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateUserModulePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateUserModulePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserModulePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditUserModulePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditUserModulePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserModulePrivilegeUnionTempAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserModulePrivilegeUnionTempAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserModulePrivilegeUnionTempAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountUserModulePrivilegeUnionWithTemp">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountUserModulePrivilegeUnionWithTemp" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountUserModulePrivilegeUnionWithTemp_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLocationByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserLocationByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserLocationByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLocationUnionTempAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserLocationUnionTempAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserLocationUnionTempAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditUserLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditUserLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserLocationAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isUserLocationAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isUserLocationAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountUserMerchandise">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountUserMerchandise" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountUserMerchandise_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMerchandise">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserMerchandise" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserMerchandise_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMerchandiseUnionTempAction">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserMerchandiseUnionTempAction" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserMerchandiseUnionTempAction_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserMerchandise">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateUserMerchandise" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateUserMerchandise_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserMerchandise">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditUserMerchandise" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditUserMerchandise_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserMerchandiseExists">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isUserMerchandiseExists" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isUserMerchandiseExists_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserModulePrivilegeSingle">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateUserModulePrivilegeSingle" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateUserModulePrivilegeSingle_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUserLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateUserLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateUserLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountUserLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountUserLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountUserLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserCompany">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditUserCompany" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditUserCompany_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleCategoryByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleCategoryByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleCategoryByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SessionExtend">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/SessionExtend" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_SessionExtend_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastCutOffID">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetLastCutOffID" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetLastCutOffID_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleCategoryById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleCategoryById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleCategoryById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivilegeForModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrivilegeForModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrivilegeForModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleType">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleType" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleType_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleFilterType">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleFilterType" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleFilterType_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetAppParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetAppParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountAppParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountAppParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountAppParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleCategoryList">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleCategoryList" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleCategoryList_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountModuleCategoryList">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountModuleCategoryList" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountModuleCategoryList_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateModuleCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateModuleCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateModuleCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditModuleCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditModuleCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditModuleCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeletePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeletePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isModuleCategoryAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isModuleCategoryAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isModuleCategoryAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isModuleAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isModuleAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isModuleAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountModuleCategory">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountModuleCategory" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountModuleCategory_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetLocName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetLocName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteUserLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteUserLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCekRolModPrivUser">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetCekRolModPrivUser" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetCekRolModPrivUser_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRolModPrivUserName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRolModPrivUserName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRolModPrivUserName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSingleUserModulePrivilege">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/DeleteSingleUserModulePrivilege" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_DeleteSingleUserModulePrivilege_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleByRoleId">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserRoleByRoleId" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserRoleByRoleId_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleByModuleTypeId">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModuleByModuleTypeId" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModuleByModuleTypeId_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrinterBrand">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrinterBrand" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrinterBrand_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrinterLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrinterLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrinterLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrinterLocationIsDefault">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetPrinterLocationIsDefault" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetPrinterLocationIsDefault_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateByUserName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/AuthenticateByUserName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_AuthenticateByUserName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateByUserNameCompanyLocation">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/AuthenticateByUserNameCompanyLocation" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_AuthenticateByUserNameCompanyLocation_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticatebyUserNamePassword">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/AuthenticatebyUserNamePassword" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_AuthenticatebyUserNamePassword_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authorize">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/Authorize" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_Authorize_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetUserModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetUserModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApplication">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/CreateApplication" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_CreateApplication_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountApplication">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountApplication" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountApplication_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRowsCountApplicationConfigurationParameter">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetRowsCountApplicationConfigurationParameter" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetRowsCountApplicationConfigurationParameter_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModule">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetModule" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetModule_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isApplicationAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isApplicationAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isApplicationAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isApplicationParameterAlreadyUsed">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/isApplicationParameterAlreadyUsed" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_isApplicationParameterAlreadyUsed_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditApplication">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/EditApplication" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_EditApplication_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationParameterByName">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationParameterByName" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationParameterByName_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationParameterById">
+      <soap:operation soapAction="http://Mitra10.com/SoapHeaders/IBusinessProcess/GetApplicationParameterById" style="document" />
+      <wsdl:input>
+        <soap:header message="i0:IBusinessProcess_GetApplicationParameterById_InputMessage_Headers" part="SOAPDataContract" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="M10BusinessProcess">
+    <wsdl:port name="BasicHttpBinding_IBusinessProcess" binding="tns:BasicHttpBinding_IBusinessProcess">
+      <soap:address location="http://proteus/wsframework/Mitra10BusinessProcess.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

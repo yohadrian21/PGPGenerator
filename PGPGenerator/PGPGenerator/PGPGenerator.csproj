@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF0F90DF-2A36-43AE-9C19-369D387FB0EA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PGPGenerator</RootNamespace>
+    <AssemblyName>PGPGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PgpCore">
+      <HintPath>..\..\..\..\12. SMS\Application-Dev\PgpCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WCFExtrasPlus">
+      <HintPath>..\..\..\PGPGenerator\PGPGenerator\Dll\WCFExtrasPlus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\M10BusinessProcess\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\BusinessProcess.cs" />
+    <Compile Include="Entities\Common.cs" />
+    <Compile Include="Entities\CSoapHeader.cs" />
+    <Compile Include="Entities\M10Framework.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Connected Services\M10BusinessProcess\M10BusinessProcess.wsdl" />
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess.wsdl" />
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.AuthorizeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplConfigByApp_ParameterId_App_Config_KeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationConfigurationAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationConfigurationUnionWithTempTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationParameterByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationParameterByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationServiceCategoryByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationServiceCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetApplicationServiceUnionWithTempTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetAppParameterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCategoryByCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCategoryUnionTableTempResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCekRolModPrivUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyConfigurationAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyConfigurationByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyCutOffDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyLocationByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyLocationByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyLocationUnionWithTempResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyParameterByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyParameterByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyRoleNewResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetCompanyUnionTempActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetLastCutOffIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetLocationByCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetLocationNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetLocNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetMarkModulePrivilegeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleByModuleTypeIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleCategoryByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleCategoryByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleCategoryListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleFilterTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModulePrivilegeUnionTempActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleUnionTempByAppIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetModuleUnionTempResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrinterBrandResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrinterListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrinterLocationIsDefaultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrinterLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrinterTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrivilegeByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrivilegeForModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetPrivilegeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleCompanyByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleCompanyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleCompanyUnionActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleMerchandiseStructureByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleMerchandiseStructureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleMerchandiseStructureUnionActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleModuleByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleModulePrivilegeAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleModulePrivilegeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleModulePrivilegeUnionTempActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleModuleUnionTempActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleTypeByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRoleTypeByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRolModPrivUserNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountApplicationConfigurationParameterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountApplicationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountApplicationServiceCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountAppParameterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCompanyConfigurationParameterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCompanyConfigurationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCompanyCutOffDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCompanyLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCompanyParameterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCompanyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountCompanyUnionTableActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountModuleCategoryListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountModuleCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountModulePrivilegeUnionWithTempResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountRoleByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountRoleModuleUnionWithTempResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountRoleTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountServiceCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountUserCompanyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountUserLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountUserMerchandiseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountUserModule2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountUserModulePrivilegeUnionWithTempResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountUserModuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetRowsCountUserRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetServiceByApplicationIdNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetServiceByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetServiceCategoryByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetServiceCategoryByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserCompanyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserDefaultPrinterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserLocationByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserLocationUnionTempActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserMerchandiseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserMerchandiseUnionTempActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserModuleByUserName2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserModuleByUserNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserModulePrivilegeUnionTempActionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserRoleByRoleIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserRoleByUserNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserRoleLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.GetUserRoleLocationUnionWithTempTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isApplicationAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isApplicationParameterAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isCompanyAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isCompanyParameterAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isDataValidResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isModuleAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isModuleCategoryAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isPrivilegeAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isRoleAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isRoleTypeAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isServiceCategoryAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isUserCompanyExistsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isUserLocationAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isUserLocationExistsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isUserMerchandiseExistsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isUserModuleExistsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isUserRoleExistsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.isUserRoleLocationAlreadyUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.ModuleDataContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\M10BusinessProcess\PGPGenerator.M10BusinessProcess.Privilege.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\M10BusinessProcess\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\M10BusinessProcess\Mitra10BusinessProcess.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\M10BusinessProcess\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\M10BusinessProcess\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\M10BusinessProcess\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\12. SMS\Application-Dev\SMS\ModelSMS\ModelSMS.csproj">
+      <Project>{df0270dc-174b-40d1-9523-7d9856970f50}</Project>
+      <Name>ModelSMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Help\HELP.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
